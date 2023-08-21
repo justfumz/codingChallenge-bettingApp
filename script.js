@@ -213,6 +213,7 @@ const gameEvents = new Map([
 let events = [];
 for (const [key, value] of gameEvents) {
   events.push(value);
+
   //4.
   console.log(
     key < 45 ? `[First Half] ${key}:${value}` : `[Second Half] ${key}:${value}`
