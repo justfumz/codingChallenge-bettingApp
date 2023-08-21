@@ -243,3 +243,8 @@ for (const [key, value] of gameEvents) {
     key < 45 ? `[First Half] ${key}:${value}` : `[Second Half] ${key}:${value}`
   );
 }
+
+const add = (x, y) => {
+  return x + y;
+};
+console.log(add(9, 23));
