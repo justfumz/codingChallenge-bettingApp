@@ -208,5 +208,20 @@ const gameEvents = new Map([
   [92, '🔶 Yellow card'],
 ]);
 
-const events = [...gameEvents];
+//1.
+
+let events = [];
+for (const [key, value] of gameEvents) {
+  events.push(value);
+  //4.
+  console.log(
+    key < 45 ? `[First Half] ${key}:${value}` : `[Second Half] ${key}:${value}`
+  );
+}
 console.log(events);
+events = new Set(events);
+console.log(events);
+
+//2.
+gameEvents.delete(64);
+console.log(gameEvents);
